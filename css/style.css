@@ -1,12 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    padding: 20px;
+}
+.logoimg{
+    width: 150px;
+}
+
+.body {
+    background-image: url(../imagenes/background.png);
+    width: 100%;
+
+}
+.article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .menuimg {
-    display: flex;
-    width: 400px;
-    height: auto;
-
-}
-.logoimg {
-    display: flex;
     width: 200px;
-    height: auto;
-
+    height: 200px;
+    margin: 20px;
 }
+
