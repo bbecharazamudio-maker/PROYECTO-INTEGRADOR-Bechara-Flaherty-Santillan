@@ -3,35 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Riders</title> <link rel="stylesheet" href="./css/style.css"> <!-- Agrega esta línea -->
+    <title>Login Riders</title> <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="./imagenes/logo.png" alt="Logo de Riders Ristorante" class="logoimg"></a>
+        </div>
+        <form action="./searh-results.html" method="get">
+            <input type="text" placeholder="Buscar..." class="search">
+            <button type="submit" class="searchbtn">Buscar</button>
+        </form>
+        <div class="login">
+            <li class="loginli"><a href="./login.html" class="userli"> Login</a></li>
+            <li class="loginli"><a href="./register.html"class= 'userli'>Register</a></li>
+        </div>
+    </header>
+    <form action="./index.html" method="get" class="form_user">
     <h1>Log in</h1>
-    <form action="./index.html" method="get">
-        <div>
-            <h7>Nombre completo</h7>
+        <div class="divlogin"> 
+            <p class="plogin">Nombre completo</p class="plogin">
             <label for="Nombre completo"></label>
             <input type="text" name="NombreUsuario" id="" required>
         </div>
-        <div>
-            <h7> Correo electrónico</h7>
+        <div class="divlogin">
+            <p class="plogin"> Correo electrónico</p class="plogin">
             <label for="Correo electrónico"></label>
-        <input type="email" name="emailUsuario" required placeholder="Ej: ejemplo@mail.com">
+        <input class="input" type="email" name="emailUsuario" required placeholder="Ej: ejemplo@mail.com">
         </div>
-        <div>
-            <h7>Contraseña</h7>
+        <div class="divlogin">
+            <p class="plogin">Contraseña</p class="plogin">
             <label for="Contraseña"></label>
         <input type="password" name="contraseñaUsuario" required>
        </div>
     
-    <div>
+    <div class="terminos">
         <input type="checkbox" name="Terminos" id="" required>Acepto los terminos
     </div>
-         <button type="reset">BORRAR</button>
+    <div class="buttonlogin">
+        <button type="reset">BORRAR</button>
         <button type="submit">ENVIAR</button>
+    </div>
     </form>
-    <footer>
-        <ul>
+    <footer class="footer_login"> 
+        <ul class="apellidosul">
             <li>Antonio Santillan</li>
             <li>Benjamin Bechara</li>
             <li>Benjamin Flaherty</li>
