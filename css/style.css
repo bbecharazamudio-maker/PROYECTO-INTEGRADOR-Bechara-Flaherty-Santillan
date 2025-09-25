@@ -1,6 +1,11 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -10,26 +15,41 @@ li {
 
 header {
     display: flex;
-    padding: 20px;
-}
-.logoimg{
-    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px black;
 }
 
-.body {
-    background-image: url(../imagenes/background.png);
-    width: 100%;
-
-}
-.article {
+.login {
     display: flex;
-    flex-wrap: wrap;
+    margin-right: 10px;
 }
 
-.section {
+.loginli {
+    margin-right: 10px;
+}
+
+.logoimg {
+    width: 103px;
+}
+
+.menuarticle {
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+}
+
+.menusections {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    margin-right: 61px;
+}
+
+.banner {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .menuimg {
