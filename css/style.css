@@ -22,7 +22,7 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: solid 1px black;
-    background-color: wheat;
+    background-color: white;
 }
 
 .userli{
@@ -214,4 +214,18 @@ nav {
 
 .no-results {
     display: none;
+}
+
+.divregister {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.buttonregister {
+    display: flex;
+    justify-content: center;
+    width: 60%;
 }
