@@ -175,7 +175,7 @@ h1, h2 {
 }
 .p_product {
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     color: black;
 }
 
@@ -183,4 +183,24 @@ h1, h2 {
     display: flex;
     margin-right: 40px;
     padding-right: 20px;
+}
+
+.product_name {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-left: 25px;
+}
+
+.product_detail {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.product_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 30px;
 }
