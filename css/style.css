@@ -126,9 +126,10 @@ h1, h2 {
 .navlink{
     color: black;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
 }
 .form_user {
     display: flex;
@@ -164,4 +165,22 @@ h1, h2 {
 .inputregister {
     align-self: center;
     width: 100%;
+}
+
+.img_product {
+    margin: 20px;
+    width: 600px;
+    border-radius: 10px;
+    height: 700px;
+}
+.p_product {
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.navlistproduct {
+    display: flex;
+    margin-right: 40px;
+    padding-right: 20px;
 }
