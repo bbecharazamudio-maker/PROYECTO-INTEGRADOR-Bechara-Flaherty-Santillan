@@ -230,3 +230,164 @@ nav {
     justify-content: center;
     width: 60%;
 }
+
+@media (max-width: 1024px) {
+  header {
+    padding: 8px 12px;
+  }
+
+  .login {
+    gap: 8px;
+  }
+
+  .productosmenu {
+    margin-left: 20px;
+    width: calc(100% - 40px);
+  }
+
+  .menu {
+    width: 280px;
+  }
+
+  .img_product {
+    width: 520px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .menuarticle {
+    flex-direction: column;
+}
+
+  nav {
+    width: 100%;
+    padding: 8px 12px;
+    border-width: 2px;
+  }
+
+  .navlink {
+    font-size: 22px;
+    margin-left: 12px;
+  }
+
+  .banner {
+    margin-bottom: 12px;
+    border-width: 2px;
+  }
+
+  .productosmenu {
+    margin-left: 0;
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .menu {
+    width: calc(50% - 24px);
+    margin: 12px;
+  }
+
+  .menuimg {
+    width: 160px;
+    height: 160px;
+    padding: 8px;
+  }
+
+  .form_user {
+    width: min(420px, 90%);
+    margin: 16px auto 120px;
+  }
+
+  .product_detail {
+    gap: 12px;
+    padding: 0 12px;
+  }
+
+  .img_product {
+    width: 100%;
+    height: auto;
+    margin: 12px 0;
+  }
+
+  .product_info {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .logoimg {
+    width: 80px;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .login {
+    justify-content: center;
+    margin-right: 0;
+    gap: 6px;
+  }
+
+  h1 { font-size: 24px; }
+  h2 { font-size: 20px; }
+
+  .productosmenu {
+    border-radius: 0;
+    padding: 12px;
+  }
+
+  .menu {
+    width: 100%;
+    margin: 8px 0;
+    border-radius: 12px;
+  }
+
+  .menuimg {
+    width: 140px;
+    height: 140px;
+    padding: 6px;
+  }
+
+  .comidalink {
+    display: inline-block;
+    margin-left: 12px;
+    padding: 8px 10px;
+    border-radius: 4px;
+  }
+
+  .form_user {
+    width: 92%;
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 80px;
+  }
+
+  .buttonlogin,
+  .buttonregister {
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .product_detail {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product_name {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .apellidosul {
+    flex-wrap: wrap;
+    gap: 6px 16px;
+  }
+}
