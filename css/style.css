@@ -283,7 +283,7 @@ nav {
   }
 
   .menu {
-    width: calc(50% - 24px);
+    width: 476px;
     margin: 12px;
   }
 
@@ -387,7 +387,8 @@ nav {
   }
 
   .apellidosul {
-    flex-wrap: wrap;
-    gap: 6px 16px;
-  }
+  margin-right: 16px;
+  margin-bottom: 6px;
 }
+
+  }
