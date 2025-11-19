@@ -23,6 +23,7 @@ header {
     align-items: center;
     border-bottom: solid 1px black;
     background-color: white;
+    padding: 10px 20px;
 }
 
 .userli{
@@ -73,7 +74,7 @@ header {
 }
 
 p{
-    color: white;
+    color: #f3f3f3;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
 }
@@ -82,7 +83,7 @@ p{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: brown;
+    background-color: #a64040;
     margin-left: 60px;
     border-radius: 20px;
     padding: 20px;
@@ -96,7 +97,7 @@ p{
     width: 234px;
     border-radius: 20px;
     margin-bottom: 20px;
-    border: solid 3px white;
+    border: solid 2px white;
     margin: 5px;
 }
 
@@ -207,7 +208,7 @@ h1, h2 {
 }
 
 nav {
-    background-color: green;
+    background-color:  #0f6b2e;
     width: auto;
     padding-right: 61px;
     border: 3px solid black;
@@ -327,6 +328,9 @@ nav {
 
   .search {
     width: 100%;
+    padding: 6px;
+    border: 1px black;
+    border-radius: 5px;
   }
 
   .login {
