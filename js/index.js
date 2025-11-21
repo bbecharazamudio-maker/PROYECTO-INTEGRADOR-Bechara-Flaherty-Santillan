@@ -3,8 +3,8 @@ window.addEventListener("load", function () {
     const formulario = document.querySelector("header form");
     const input = document.querySelector("header .search");
 
-    if (!formulario) return;
-    if (!input) return;
+    // if (!formulario) return;
+    // if (!input) return;
 
     formulario.addEventListener("submit", function () {
 
@@ -25,3 +25,65 @@ window.addEventListener("load", function () {
     });
 
 });
+
+
+let category1 = fetch('https://dummyjson.com/products/category/mens-shirts')
+.then(res => res.json())
+.then(console.log);
+
+let category2 = fetch('https://dummyjson.com/products/category/mens-shoes')
+
+window.addEventListener('load', function () {
+
+    const categoria1 = 'mens-shirts';
+    const categoria2 = 'mens-shoes';
+
+    const section1 = document.querySelector('#section1');
+    const section2 = document.querySelector('#section2');
+
+    function cargarSeccion(category1, contenedor){
+        fetch(url)
+        .then(function(res){
+            return res.json();
+        })
+        .then(function(data){
+            
+            contenedor.innerHTML = "";
+
+            for (let i = 0; i < data.products.length && i < 10; i++) {
+
+                let prod = data.products[i];
+
+                contenedor.innerHTML += 
+                "<div class='menu'>" +
+                    "<img src='" + prod.thumbnail + "' class='menuimg'>" +
+                    "<p class='txtcomdida'>" + prod.title + "</p>" +
+                    "<p class='txtparr'>" + prod.description + "</p>" +
+                    "<p class='txtprecio'>$" + prod.price + "</p>" +
+                    "<a href='product.html?id=" + prod.id + "' class='comidalink'>Ver detalle</a>" +
+                "</div>";
+            }
+
+        })
+        .catch(function(error){
+            console.log("Error: " + error);
+        });
+    }
+
+    cargarSeccion("https://dummyjson.com/products/category/" + categoria1, section1);
+    cargarSeccion("https://dummyjson.com/products/category/" + categoria2, section2);
+
+});
+
+
+
+console.log("Productos recibidos:", data.products);
+
+    
+
+
+
+
+
+
+
