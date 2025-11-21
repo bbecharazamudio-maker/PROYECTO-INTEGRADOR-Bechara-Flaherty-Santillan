@@ -27,12 +27,6 @@ window.addEventListener("load", function () {
 });
 
 
-let category1 = fetch('https://dummyjson.com/products/category/mens-shirts')
-.then(res => res.json())
-.then(console.log);
-
-let category2 = fetch('https://dummyjson.com/products/category/mens-shoes')
-
 window.addEventListener('load', function () {
 
     const categoria1 = 'mens-shirts';
@@ -41,7 +35,7 @@ window.addEventListener('load', function () {
     const section1 = document.querySelector('#section1');
     const section2 = document.querySelector('#section2');
 
-    function cargarSeccion(category1, contenedor){
+    function cargarSeccion(url, contenedor){
         fetch(url)
         .then(function(res){
             return res.json();
@@ -74,10 +68,6 @@ window.addEventListener('load', function () {
     cargarSeccion("https://dummyjson.com/products/category/" + categoria2, section2);
 
 });
-
-
-
-console.log("Productos recibidos:", data.products);
 
     
 
