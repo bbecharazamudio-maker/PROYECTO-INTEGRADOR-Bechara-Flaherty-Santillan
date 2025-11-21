@@ -67,9 +67,29 @@ window.addEventListener('load', function () {
     cargarSeccion("https://dummyjson.com/products/category/" + categoria1, section1);
     cargarSeccion("https://dummyjson.com/products/category/" + categoria2, section2);
 
+
 });
 
-    
+window.addEventListener("load", function(){
+
+    const categoriasDeseadas = ["mens-shirts", "mens-shoes"];
+
+    const lista = document.querySelector(".navlist");
+
+    lista.innerHTML = "";
+
+    for (let i = 0; i < categoriasDeseadas.length; i++) {
+
+        let categoria = categoriasDeseadas[i];
+
+        lista.innerHTML += 
+        "<li><a class='navlink' href='category.html?id=" + categoria + "'>" 
+        + categoria +
+        "</a></li>";
+    }
+
+});
+
 
 
 
