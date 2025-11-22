@@ -8,7 +8,7 @@
 <body>
     <header>
         <div class="logo">
-            <a href="./index.html"><img src="./imagenes/logo.png" alt="Logo de Riders Ristorante" class="logoimg"></a>
+            <a href="./index.html"><img src="./imagenes/logo.png" alt="Logo de Riders Club" class="logoimg"></a>
         </div>
         <form action="./searh-results.html" method="get">
             <input type="text" placeholder="Buscar..." class="search" name="search">
@@ -19,7 +19,7 @@
             <li class="loginli"><a href="./register.html"class= 'userli'>Register</a></li>
         </div>
     </header>
-    <form action="./index.html" method="get" class="form_user">
+    <form action="./index.html" method="get" class="form_user" id="loginForm">
     <h1>Log in</h1>
         <div class="divlogin"> 
             <p class="plogin">Nombre completo</p class="plogin">
@@ -29,12 +29,15 @@
         <div class="divlogin">
             <p class="plogin"> Correo electrónico</p class="plogin">
             <label for="Correo electrónico"></label>
-        <input class="input" type="email" name="emailUsuario" required placeholder="Ej: ejemplo@mail.com">
-        </div>
+        <input class="input" type="email" name="emailUsuario" id="emailUsuario" required placeholder="Ej: ejemplo@mail.com">
+        <p id="emailError" class="error"></p>
+
+    </div>
         <div class="divlogin">
             <p class="plogin">Contraseña</p class="plogin">
             <label for="Contraseña"></label>
-        <input type="password" name="contraseñaUsuario" required>
+        <input type="password" name="contraseñaUsuario" id="contraseñaUsuario" required>
+        <p id="passwordError" class="error"></p>
        </div>
     
     <div class="terminos">
@@ -44,7 +47,8 @@
         <button type="reset">BORRAR</button>
         <button type="submit">ENVIAR</button>
     </div>
-    </form>
+    <script src="./js/login.js"></script>
+</form>
     <footer class="footer_login"> 
         <ul class="apellidosul">
             <li>Antonio Santillan</li>
