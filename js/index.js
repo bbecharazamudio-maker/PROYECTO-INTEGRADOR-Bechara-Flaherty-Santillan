@@ -3,9 +3,6 @@ window.addEventListener("load", function () {
     const formulario = document.querySelector("header form");
     const input = document.querySelector("header .search");
 
-    // if (!formulario) return;
-    // if (!input) return;
-
     formulario.addEventListener("submit", function () {
 
         const texto = input.value;
@@ -44,6 +41,7 @@ window.addEventListener('load', function () {
             
             contenedor.innerHTML = "";
 
+
             for (let i = 0; i < data.products.length && i < 10; i++) {
 
                 let prod = data.products[i];
@@ -70,22 +68,25 @@ window.addEventListener('load', function () {
 
 });
 
-window.addEventListener("load", function(){
 
-    const categoriasDeseadas = ["mens-shirts", "mens-shoes"];
+const listaCateg = document.querySelector('.navlist');
 
-    const lista = document.querySelector(".navlist");
+fetch("https://dummyjson.com/products/categories")
+.then(res => res.json())
+.then(data => {
 
-    lista.innerHTML = "";
+    listaCateg.innerHTML = ""
 
-    for (let i = 0; i < categoriasDeseadas.length; i++) {
+    for (let i = 0; i < data.length; i++) {
 
-        let categoria = categoriasDeseadas[i];
+        let categoria = data[i];  
 
-        lista.innerHTML += 
-        "<li><a class='navlink' href='category.html?id=" + categoria + "'>" 
-        + categoria +
-        "</a></li>";
+        listaCateg.innerHTML +=
+        `<li>
+            <a href="./category.html?cat=${categoria.slug}" class="navlink">
+                ${categoria.name}
+            </a>
+        </li>`;
     }
 
 });

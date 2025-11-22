@@ -21,24 +21,45 @@
         </div>
     </header>
     <article class="menuarticle">
-            <nav>
-                <ul class="navlist">
-                    <li><a href="./category.html" class="navlink">Entradas</a></li>
-                    <li><a href="./category.html" class="navlink">Pizza</a></li>
-                    <li><a href="./category.html" class="navlink">Pasta</a></li>
-                    <li><a href="./category.html" class="navlink">Postres</a></li>
-                </ul>
-            </nav>
-<main>
-    <div class="product_detail">
-        <img src="./imagenes/bruschetta.png" alt="Bruschetta" class="img_product">
+    <nav>
+        <ul class="navlist">
+            <li><a href="./category.html" class="navlink">Entradas</a></li>
+            <li><a href="./category.html" class="navlink">Pizza</a></li>
+            <li><a href="./category.html" class="navlink">Pasta</a></li>
+            <li><a href="./category.html" class="navlink">Postres</a></li>
+        </ul>
+    </nav>
+
+    <section class="product_detail">
+
         <div class="product_info">
-            <h1 class="product_name">Bruschetta</h1>
-            <p class="p_product">Pan artesanal tostado, cubierto con tomates frescos, albahaca y un toque de aceite de oliva extra virgen.</p>
+
+            <img id="productImg" class="img_product">
+
+            <p id="productBrand" class="p_product"></p>
+            <p id="productDescription" class="p_product"></p>
+            <p id="productPrice" class="p_product"></p>
+            <p id="productStock" class="p_product"></p>
+
+            <p class="p_product">Categoria:
+                <a id="productCategory" href="#" class="comidalink"></a>
+            </p>
+
+            <p class="p_product">Tags</p>
+            <ul id="productTags"></ul>
+
         </div>
-    </div>
-</main>
-   </article>
+
+    </section>
+
+    <h2>Reviews</h2>
+    <section id="reviewSection"></section>
+
+</article>
+
+<script src="js/product.js"></script>
+<script src="js/index.js"></script>
+
    <footer>
         <div class="apellidos">
             <ul class="apellidosul">

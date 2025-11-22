@@ -11,7 +11,7 @@
          <div class="logo">
             <a href="./index.html"><img src="./imagenes/logo.png" alt="Logo de Riders Ristorante" class="logoimg"></a>
         </div>
-        <form action="./search-results.html">
+        <form action="./searh-results.html" method="get">
             <input type="text" placeholder="Buscar..." class="search" id="searchInput" name="search">
             <button type="submit" class="searchbtn">Buscar</button>
         </form>
@@ -29,33 +29,11 @@
                     <li><a href="./category.html" class="navlink">Postres</a></li>
                 </ul>
             </nav>            
-        <div class="menusections">
-            <h1>Resultados de "Pizza"...</h1>
-             <h2 class="no-results">No hay resultados para su busqueda...</h2>
-            <section class="productosmenu">
-            <div class="menu">
-                    <img src="./imagenes/pizza1.png" alt="comida1" class="menuimg">
-                    <p class="txtcomdida">Pizza Margherita</p>
-                    <p class="txtparr">Base de salsa de tomate, mozzarella fresca y hojas de albahaca.</p>
-                    <p class="txtprecio">$10.500</p>
-                    <a href="product.html" class= 'comidalink'>Saber mas</a>
-            </div>
-            <div class="menu">
-                    <img src="./imagenes/pizza2.png" alt="comida1" class="menuimg">
-                    <p class="txtcomdida">Pizza Prosciutto</p>
-                    <p class="txtparr">Pizza con salsa de tomate, mozzarella, jamón crudo italiano y rúcula fresca.</p>
-                    <p class="txtprecio">$12.000</p>
-                    <a href="product.html" class= 'comidalink'>Saber mas</a>
-            </div>
-            <div class="menu">
-                    <img src="./imagenes/pizza3.png" alt="comida1" class="menuimg">
-                    <p class="txtcomdida">Pizza Funghi</p>
-                    <p class="txtparr">Pizza con salsa de tomate, mozzarella y champiñones frescos.</p>
-                    <p class="txtprecio">$10.000</p>
-                    <a href="product.html" class= 'comidalink'>Saber mas</a>
-            </div>
-            </section>
+            <h2 id="tituloBusqueda"></h2>
+           
+            <section id="resultados" class="productosmenu"></section>
             <script src="./js/search-results.js"></script>
+            <script src="./js/index.js"></script>
         
         </article>
 </body>
