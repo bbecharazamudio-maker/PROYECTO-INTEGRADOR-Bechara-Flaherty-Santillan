@@ -24,6 +24,7 @@ header {
     border-bottom: solid 1px black;
     background-color: white;
     padding: 10px 20px;
+   
 }
 
 .userli{
@@ -152,9 +153,12 @@ h1, h2 {
     text-align: center;
     padding: 0;
     margin: 0;
+    font-size: 20px;
 }
 
 .divlogin, .terminos {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 30px;
 }
 
@@ -166,7 +170,7 @@ h1, h2 {
 
 .inputregister {
     align-self: center;
-    width: 100%;
+    width: auto;
 }
 
 .img_product {
@@ -231,6 +235,12 @@ nav {
     justify-content: center;
     width: 60%;
 }
+header p {
+    color: black;
+    padding: 0;
+    margin-right: 20px;
+    font-size: 14px;
+}
 
 @media (max-width: 1024px) {
   header {
@@ -238,7 +248,7 @@ nav {
   }
 
   .login {
-    gap: 8px;
+    margin-right: 8px;
   }
 
   .productosmenu {
@@ -319,7 +329,7 @@ nav {
   header {
     flex-direction: column;
     align-items: stretch;
-    gap: 8px;
+    margin-right: 8px;
   }
 
   .logoimg {
@@ -336,7 +346,7 @@ nav {
   .login {
     justify-content: center;
     margin-right: 0;
-    gap: 6px;
+    margin-right: 6px;
   }
 
   h1 { font-size: 24px; }
@@ -376,7 +386,7 @@ nav {
   .buttonlogin,
   .buttonregister {
     width: 100%;
-    gap: 10px;
+    margin-right: 10px;
     justify-content: center;
   }
 

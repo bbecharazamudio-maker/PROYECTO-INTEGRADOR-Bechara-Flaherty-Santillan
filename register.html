@@ -1,56 +1,73 @@
-<!DOCTYpE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riders Club</title> <link rel="stylesheet" href="./css/style.css">
+    <title>Riders Club</title> 
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="./index.html"><img src="./imagenes/logo.png" alt="Logo de Riders Club" class="logoimg"></a>
+            <a href="./index.html">
+                <img src="./imagenes/logo.png" alt="Logo de Riders Club" class="logoimg">
+            </a>
         </div>
         <form action="./searh-results.html" method="get">
             <input type="text" placeholder="Buscar..." class="search" name="search">
             <button type="submit" class="searchbtn">Buscar</button>
         </form>
         <div class="login">
-            <li class="loginli"><a href="./login.html" class="userli"> Login</a></li>
-            <li class="loginli"><a href="./register.html"class= 'userli'>Register</a></li>
+            <ul>
+                <li class="loginli">
+                    <a href="./login.html" class="userli">Login</a>
+                </li>
+                <li class="loginli">
+                    <a href="./register.html" class="userli">Register</a>
+                </li>
+            </ul>
         </div>
     </header>
 
-<section class="">
-<form action="./index.html" method="get" class="form_user">
-    <h1>Register</h1>
-        <div class="divregister"> 
-            <label class="plogin">Nombre completo</label>
-            <input type="text" name="NombreUsuario" id="" required>
-        </div>
-        <div class="divregister">
-            <label class="plogin">Correo electrónico</label>  
-        <input class="input" type="email" name="emailUsuario" required placeholder="Ej: ejemplo@mail.com">
-        </div>
-        <div class="divregister">
-            <label class="plogin">Contraseña</label class="plogin"> 
-        
-                <input type="password" name="contraseñaUsuario" required>
-       </div>
+    <section>
+        <form action="./index.html" method="get" class="form_user">
+            <h1>Register</h1>
 
-       <div class="divregister">
-       <label class="plogin">De nuevo su contraseña</label class="plogin"> 
-        <input type="password" name="contraseñaUsuario" required class="inputregister">
-       </div>
-    
-        <div class="terminos">
-            <input type="checkbox" name="Terminos" id="" required>Acepto los terminos
-        </div>
-        <div class="buttonregister  ">
-            <button type="submit">Crear cuenta</button>
-        </div>
-    </form>
-</section>
- <footer>
+            <div class="divregister">
+                <label class="plogin">Nombre completo</label>
+                <input type="text" name="NombreUsuario" required>
+            </div>
+
+            <div class="divregister">
+                <label class="plogin">Correo electrónico</label>
+                <input type="email" class="input" name="emailUsuario" required placeholder="Ej: ejemplo@mail.com">
+            </div>
+
+            <div class="divregister">
+                <label class="plogin">Contraseña</label>
+                <input type="password" name="contraseñaUsuario" required>
+            </div>
+
+            <div class="divregister">
+                <label class="plogin">Repetir contraseña</label>
+                <input type="password" class="inputregister" name="repetirContraseña" required>
+            </div>
+
+            <div class="terminos">
+                <input type="checkbox" name="Terminos" required> Acepto los términos
+            </div>
+
+            <div class="buttonregister">
+                <button type="submit">Crear cuenta</button>
+            </div>
+
+            <p class="login-link">
+                <a href="./login.html">Ya tengo una cuenta</a>
+            </p>
+        </form>
+    </section>
+           <script src="./js/register.js"></script>
+    <footer>
         <div class="apellidos">
             <ul class="apellidosul">
                 <li>Benjamin Bechara</li>
@@ -58,6 +75,6 @@
                 <li>Antonio Santillan</li>
             </ul>
         </div>
-    </footer>
+    </footer> 
 </body>
 </html>
